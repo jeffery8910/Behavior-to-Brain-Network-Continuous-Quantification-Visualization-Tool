@@ -1,0 +1,38 @@
+{
+  "Prefrontal_Cortex": {
+    "functions": ["工作記憶", "執行控制"],
+    "diseases": ["ADHD", "MCI", "抑鬱症"],
+    "thresholds": [
+      { "level": "high", "min": 80, "message": "高風險：可能影響執行功能，請留意 ADHD、MCI、抑鬱症徵兆" },
+      { "level": "medium", "min": 50, "message": "中風險：建議持續觀察工作記憶與注意力" },
+      { "level": "low", "min": 0, "message": "低風險：目前無明顯異常" }
+    ]
+  },
+  "Hippocampus": {
+    "functions": ["詞對記憶編碼", "長期記憶"],
+    "diseases": ["阿茲海默症", "MCI"],
+    "thresholds": [
+      { "level": "high", "min": 80, "message": "高風險：記憶衰退警訊，請留意阿茲海默症/MCI" },
+      { "level": "medium", "min": 50, "message": "中風險：建議追蹤記憶表現" },
+      { "level": "low", "min": 0, "message": "低風險：目前無明顯異常" }
+    ]
+  },
+  "Motor_Cortex": {
+    "functions": ["步態控制", "肢體協調"],
+    "diseases": ["運動障礙", "帕金森氏症"],
+    "thresholds": [
+      { "level": "high", "min": 80, "message": "高風險：步態/協調異常，需注意運動障礙相關疾病" },
+      { "level": "medium", "min": 50, "message": "中風險：建議觀察步態變化" },
+      { "level": "low", "min": 0, "message": "低風險：暫無異常" }
+    ]
+  },
+  "DMN": {
+    "functions": ["內省", "自發思考"],
+    "diseases": ["抑鬱症", "MCI"],
+    "thresholds": [
+      { "level": "high", "min": 80, "message": "高風險：內省功能異常，可能與抑鬱症、MCI 有關" },
+      { "level": "medium", "min": 50, "message": "中風險：注意自發思考與情緒變化" },
+      { "level": "low", "min": 0, "message": "低風險：目前無明顯異常" }
+    ]
+  }
+}
