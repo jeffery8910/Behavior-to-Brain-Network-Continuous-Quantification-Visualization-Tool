@@ -1,0 +1,16 @@
+[
+  {
+    "behavior": "持續注意力指敲",
+    "brain_regions": [
+      {"region": "前額葉", "weight": 0.8},
+      {"region": "頂葉", "weight": 0.5}
+    ]
+  },
+  {
+    "behavior": "自然步行",
+    "brain_regions": [
+      {"region": "小腦", "weight": 0.7},
+      {"region": "運動皮質", "weight": 0.6}
+    ]
+  }
+]
