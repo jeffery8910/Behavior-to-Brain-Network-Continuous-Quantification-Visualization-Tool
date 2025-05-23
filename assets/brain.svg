@@ -1,4 +1,88 @@
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="100" cy="50" rx="90" ry="40" fill="#e0e0e0" stroke="#888" stroke-width="2"/>
-  <text x="100" y="55" font-size="16" text-anchor="middle" fill="#444">Brain</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 大腦外輪廓 -->
+  <g id="brain-outline">
+    <path d="M50 150 C50 80 100 50 200 50 C300 50 350 80 350 150 C350 200 320 220 280 230 C250 240 200 245 150 240 C100 235 50 200 50 150 Z" 
+          fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  </g>
+  
+  <!-- 腦區標示 -->
+  <g id="brain-regions">
+    <!-- 前額葉 -->
+    <circle id="prefrontal" cx="120" cy="120" r="25" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>前額葉 (Prefrontal Cortex)</title>
+    </circle>
+    <text x="120" y="125" text-anchor="middle" font-size="10" fill="#333">前額葉</text>
+    
+    <!-- 頂葉 -->
+    <circle id="parietal" cx="200" cy="100" r="20" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>頂葉 (Parietal Lobe)</title>
+    </circle>
+    <text x="200" y="105" text-anchor="middle" font-size="10" fill="#333">頂葉</text>
+    
+    <!-- 海馬體 -->
+    <circle id="hippocampus" cx="180" cy="160" r="15" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>海馬體 (Hippocampus)</title>
+    </circle>
+    <text x="180" y="165" text-anchor="middle" font-size="9" fill="#333">海馬體</text>
+    
+    <!-- 杏仁核 -->
+    <circle id="amygdala" cx="160" cy="180" r="12" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>杏仁核 (Amygdala)</title>
+    </circle>
+    <text x="160" y="185" text-anchor="middle" font-size="8" fill="#333">杏仁核</text>
+    
+    <!-- 運動皮質 -->
+    <circle id="motor-cortex" cx="220" cy="130" r="18" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>運動皮質 (Motor Cortex)</title>
+    </circle>
+    <text x="220" y="135" text-anchor="middle" font-size="9" fill="#333">運動皮質</text>
+    
+    <!-- 前扣帶皮質 -->
+    <circle id="acc" cx="150" cy="140" r="16" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>前扣帶皮質 (Anterior Cingulate Cortex)</title>
+    </circle>
+    <text x="150" y="145" text-anchor="middle" font-size="8" fill="#333">前扣帶</text>
+    
+    <!-- 小腦 -->
+    <circle id="cerebellum" cx="280" cy="200" r="22" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>小腦 (Cerebellum)</title>
+    </circle>
+    <text x="280" y="205" text-anchor="middle" font-size="10" fill="#333">小腦</text>
+    
+    <!-- 基底核 -->
+    <circle id="basal-ganglia" cx="190" cy="180" r="14" fill="#e8f4f8" stroke="#2196f3" stroke-width="2" opacity="0.7">
+      <title>基底核 (Basal Ganglia)</title>
+    </circle>
+    <text x="190" y="185" text-anchor="middle" font-size="8" fill="#333">基底核</text>
+  </g>
+  
+  <!-- 影響等級圖例 -->
+  <g id="legend" transform="translate(20, 250)">
+    <text x="0" y="0" font-size="12" font-weight="bold" fill="#333">影響等級:</text>
+    <circle cx="10" cy="15" r="6" fill="#4caf50" opacity="0.7"/>
+    <text x="20" y="19" font-size="10" fill="#333">低影響</text>
+    <circle cx="70" cy="15" r="6" fill="#ff9800" opacity="0.7"/>
+    <text x="80" y="19" font-size="10" fill="#333">中影響</text>
+    <circle cx="130" cy="15" r="6" fill="#f44336" opacity="0.7"/>
+    <text x="140" y="19" font-size="10" fill="#333">高影響</text>
+  </g>
+  
+  <!-- CSS 樣式 -->
+  <style>
+    .region-low { fill: #4caf50; opacity: 0.7; }
+    .region-medium { fill: #ff9800; opacity: 0.7; }
+    .region-high { fill: #f44336; opacity: 0.7; }
+    .region-default { fill: #e8f4f8; opacity: 0.7; }
+    
+    circle:hover {
+      stroke-width: 3;
+      opacity: 1.0;
+    }
+    
+    text {
+      font-family: "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+      pointer-events: none;
+    }
+  </style>
 </svg>

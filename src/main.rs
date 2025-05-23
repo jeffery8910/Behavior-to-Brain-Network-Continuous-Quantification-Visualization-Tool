@@ -10,8 +10,9 @@ use mapping::load_behavior_brain_map;
 fn main() -> Result<(), eframe::Error> {
     // 設定 egui 視窗選項
     let options = eframe::NativeOptions {
-        initial_window_size: Some(egui::Vec2::new(1200.0, 800.0)),
-        min_window_size: Some(egui::Vec2::new(800.0, 600.0)),
+        viewport: egui::ViewportBuilder::default()
+            .with_inner_size([1200.0, 800.0])
+            .with_min_inner_size([800.0, 600.0]),
         ..Default::default()
     };
 

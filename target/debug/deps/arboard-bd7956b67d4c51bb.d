@@ -1,0 +1,10 @@
+C:\Users\USER\Desktop\Behavior-to-Brain-Network-Continuous-Quantification-Visualization-Tool\target\debug\deps\libarboard-bd7956b67d4c51bb.rmeta: C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\lib.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\common.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\mod.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\windows.rs
+
+C:\Users\USER\Desktop\Behavior-to-Brain-Network-Continuous-Quantification-Visualization-Tool\target\debug\deps\libarboard-bd7956b67d4c51bb.rlib: C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\lib.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\common.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\mod.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\windows.rs
+
+C:\Users\USER\Desktop\Behavior-to-Brain-Network-Continuous-Quantification-Visualization-Tool\target\debug\deps\arboard-bd7956b67d4c51bb.d: C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\lib.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\common.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\mod.rs C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\windows.rs
+
+C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\lib.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\common.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\mod.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\arboard-3.5.0\src\platform\windows.rs:
