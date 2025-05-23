@@ -1,16 +1,51 @@
 [package]
 name = "behavior_brain_viz"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Your Name <your.email@example.com>"]
 description = "Behavior-to-Brain Network Continuous Quantification & Visualization Tool"
+license = "MIT"
+repository = "https://github.com/your-name/behavior-brain-viz"
+readme = "README.md"
+keywords = ["neuroscience", "brain", "behavior", "visualization", "gui"]
+categories = ["science", "visualization", "gui"]
 
 [dependencies]
-efame = "0.24"
+eframe = "0.24"
 egui = "0.24"
-egui_extras = "0.24"
+egui_extras = { version = "0.24", features = ["all_loaders"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1.0"
+
+# Windows-specific dependencies
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.9", features = [
+    "winuser",
+    "wingdi",
+    "libloaderapi",
+    "processthreadsapi",
+    "shellapi",
+    "windef",
+    "dwrite",
+    "d2d1",
+    "combaseapi",
+    "handleapi",
+    "synchapi",
+    "sysinfoapi",
+    "ole2",
+    "shobjidl_core"
+] }
 
 [profile.release]
 lto = true
+opt-level = "s"
+strip = true
+
+[profile.dev]
+opt-level = 1
+
+[[bin]]
+name = "behavior_brain_viz"
+path = "src/main.rs"

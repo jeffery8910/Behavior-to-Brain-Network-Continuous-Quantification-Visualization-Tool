@@ -2,15 +2,138 @@
   {
     "behavior": "持續注意力指敲",
     "brain_regions": [
-      {"region": "前額葉", "weight": 0.8},
-      {"region": "頂葉", "weight": 0.5}
-    ]
+      {"region": "前額葉", "weight": 0.8, "description": "執行控制與注意力調節"},
+      {"region": "頂葉", "weight": 0.5, "description": "注意力網路的核心區域"},
+      {"region": "前扣帶皮質", "weight": 0.6, "description": "錯誤監控與衝突解決"}
+    ],
+    "normalization_params": {
+      "mean": 50.0,
+      "std_dev": 15.0,
+      "sample_size": 200
+    }
   },
   {
     "behavior": "自然步行",
     "brain_regions": [
-      {"region": "小腦", "weight": 0.7},
-      {"region": "運動皮質", "weight": 0.6}
-    ]
+      {"region": "小腦", "weight": 0.7, "description": "運動協調與平衡控制"},
+      {"region": "運動皮質", "weight": 0.6, "description": "隨意運動控制"},
+      {"region": "基底核", "weight": 0.5, "description": "運動模式學習與自動化"}
+    ],
+    "normalization_params": {
+      "mean": 1.2,
+      "std_dev": 0.3,
+      "sample_size": 150
+    }
+  },
+  {
+    "behavior": "Flanker Inhibitory Control Score (HCP)",
+    "brain_regions": [
+      {"region": "Middle Frontal Gyrus", "weight": 0.8, "description": "抑制控制的核心區域"},
+      {"region": "Anterior Cingulate Cortex (ACC)", "weight": 0.7, "description": "衝突監控與錯誤偵測"},
+      {"region": "Amygdala", "weight": 0.5, "description": "情緒調節與威脅評估"},
+      {"region": "Striatum", "weight": 0.6, "description": "動機與獎賞處理"}
+    ],
+    "normalization_params": {
+      "mean": 100.0,
+      "std_dev": 15.0,
+      "sample_size": 1000
+    }
+  },
+  {
+    "behavior": "Verbal Episodic Memory Score (HCP)",
+    "brain_regions": [
+      {"region": "Hippocampus", "weight": 0.9, "description": "記憶編碼與檢索的關鍵結構"},
+      {"region": "Prefrontal Cortex", "weight": 0.7, "description": "工作記憶與執行控制"},
+      {"region": "Parietal Lobe (Precuneus, Angular Gyrus)", "weight": 0.6, "description": "記憶檢索與心智時間旅行"},
+      {"region": "Occipital Lobe (Lingual Gyrus)", "weight": 0.4, "description": "視覺表徵與記憶編碼"}
+    ],
+    "normalization_params": {
+      "mean": 125.0,
+      "std_dev": 20.0,
+      "sample_size": 800
+    }
+  },
+  {
+    "behavior": "Finger Tapping Motor Score (HCP)",
+    "brain_regions": [
+      {"region": "Primary Motor Cortex (M1)", "weight": 0.9, "description": "精細運動控制"},
+      {"region": "Supplementary Motor Area (SMA)", "weight": 0.7, "description": "運動序列規劃"},
+      {"region": "Cerebellum", "weight": 0.8, "description": "運動學習與時間調節"},
+      {"region": "Basal Ganglia (Putamen, Globus Pallidus)", "weight": 0.6, "description": "運動模式選擇與執行"}
+    ],
+    "normalization_params": {
+      "mean": 80.0,
+      "std_dev": 12.0,
+      "sample_size": 900
+    }
+  },
+  {
+    "behavior": "工作記憶 N-back 任務",
+    "brain_regions": [
+      {"region": "背外側前額葉皮質", "weight": 0.85, "description": "工作記憶的維持與操作"},
+      {"region": "頂內溝", "weight": 0.7, "description": "注意力控制與工作記憶"},
+      {"region": "前扣帶皮質", "weight": 0.6, "description": "認知控制與衝突監控"}
+    ],
+    "normalization_params": {
+      "mean": 75.0,
+      "std_dev": 18.0,
+      "sample_size": 300
+    }
+  },
+  {
+    "behavior": "情緒面孔辨識",
+    "brain_regions": [
+      {"region": "杏仁核", "weight": 0.8, "description": "情緒處理與威脅偵測"},
+      {"region": "梭狀回面孔區", "weight": 0.9, "description": "面孔識別專用區域"},
+      {"region": "上顳溝", "weight": 0.6, "description": "社會認知與心智理論"},
+      {"region": "眶額皮質", "weight": 0.7, "description": "情緒調節與決策"}
+    ],
+    "normalization_params": {
+      "mean": 85.0,
+      "std_dev": 10.0,
+      "sample_size": 250
+    }
+  },
+  {
+    "behavior": "語言流暢性測試",
+    "brain_regions": [
+      {"region": "左下額回 (Broca's area)", "weight": 0.9, "description": "語言產生的核心區域"},
+      {"region": "左上顳回 (Wernicke's area)", "weight": 0.8, "description": "語言理解與語義處理"},
+      {"region": "左角回", "weight": 0.6, "description": "語言與概念整合"},
+      {"region": "前扣帶皮質", "weight": 0.5, "description": "認知控制與語言監控"}
+    ],
+    "normalization_params": {
+      "mean": 40.0,
+      "std_dev": 8.0,
+      "sample_size": 180
+    }
+  },
+  {
+    "behavior": "空間導航任務",
+    "brain_regions": [
+      {"region": "海馬體", "weight": 0.9, "description": "空間記憶與導航"},
+      {"region": "內嗅皮質", "weight": 0.8, "description": "空間位置編碼"},
+      {"region": "楔前葉", "weight": 0.7, "description": "空間意象與自我參照"},
+      {"region": "頂葉", "weight": 0.6, "description": "空間注意力與表徵"}
+    ],
+    "normalization_params": {
+      "mean": 65.0,
+      "std_dev": 12.0,
+      "sample_size": 120
+    }
+  },
+  {
+    "behavior": "決策製作任務 (Iowa Gambling Task)",
+    "brain_regions": [
+      {"region": "腹內側前額葉皮質", "weight": 0.85, "description": "價值評估與情緒決策"},
+      {"region": "眶額皮質", "weight": 0.8, "description": "獎賞預測與行為調節"},
+      {"region": "腹側紋狀體", "weight": 0.7, "description": "獎賞處理與動機"},
+      {"region": "前島葉皮質", "weight": 0.6, "description": "內感受與風險評估"}
+    ],
+    "normalization_params": {
+      "mean": 50.0,
+      "std_dev": 20.0,
+      "sample_size": 200
+    }
   }
 ]
